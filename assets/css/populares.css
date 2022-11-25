@@ -132,6 +132,8 @@
 
     .populares__conteudo{
         grid-template-columns: 100%;
+        grid-gap: 0;
+        row-gap: .5rem
     }
     .populares__card{
         width: 500px;
@@ -147,6 +149,7 @@
     .populares__card___corpo{
         grid-template-rows: auto auto;
     }
+  
 
 
 }
