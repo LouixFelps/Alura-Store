@@ -1,0 +1,152 @@
+.populares__cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #ccc;
+    height: 80px;
+    padding: .5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.populares__titulo{
+    color: #444;
+    font-weight: 600;
+}
+.populares__botao{
+    background: transparent;
+    border: none;
+    color: #444;
+    font-weight: 600;
+}
+
+.populares__conteudo{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 1rem;
+}
+.populares__card{
+    display: grid;
+    grid-template-areas: 
+    "card-imagem"
+    "card-corpo";
+    background-color: #fdfdfd;
+    grid-template-columns: 100%;
+    grid-template-rows: 168px auto;
+    padding-bottom: 2em;
+}
+.populares__card___imagem{
+    width: 100%;
+    height: 20vh;
+    grid-area: card-imagem;
+}
+.populares__card___corpo{
+    display: grid;
+    grid-template-areas: 
+    "card-cabecalho"
+    "card-conteudo";
+    grid-template-rows: 20% 80%;
+    grid-row-gap: 1em;
+    grid-area: card-corpo;
+    padding: .75rem;
+    align-items: flex-start;
+}
+
+.populares__card___titulo{
+    font-size: 1.45rem;
+    color: #333;
+    padding-top: .5em;
+}
+.populares__card___data{
+    color: #bbb;
+    font-size: .9rem;
+}
+.populares__card___descricao{
+    color: #333;
+    text-align: justify;
+    line-height: 1.5;
+    margin: .5rem 0
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    
+    .populares__conteudo{
+        grid-template-columns: auto auto auto;
+     }
+     
+     .populares__card{
+        width: 500px;
+        margin: auto;
+        grid-template-rows: 180px 425px;
+        padding-bottom: 0;
+        align-items: flex-start;
+    }
+    .populares__card___titulo{
+        font-size: 32px;
+    }
+    .populares__card___corpo{
+        grid-template-rows: auto 80%;
+    }
+    .populares__card___descricao{
+        font-size: 1.5em;
+    }
+}
+
+
+@media screen and (max-width: 992px){
+
+    .populares__conteudo{
+        grid-template-columns: auto auto;
+     }
+     
+     .populares__card{
+         width: 500px;
+         margin: auto;
+         grid-template-rows: 220px 350px;
+         padding-bottom: 0;
+         align-items: flex-start;
+     }
+     .populares__card___imagem{
+         height: 25vh;
+     }
+     .populares__card___titulo{
+         font-size: 2rem;
+     }
+     .populares__card___corpo{
+         grid-template-rows: auto auto;
+     }
+     .populares__card___descricao{
+        font-size: 1.3rem;
+     }
+
+
+
+
+}
+
+@media screen and (max-width: 768px){
+
+    .populares__conteudo{
+        grid-template-columns: 100%;
+    }
+    .populares__card{
+        width: 500px;
+        margin: auto;
+        grid-template-rows: 220px auto;
+    }
+    .populares__card___imagem{
+        height: 25vh;
+    }
+    .populares__card___titulo{
+        font-size: 2rem;
+    }
+    .populares__card___corpo{
+        grid-template-rows: auto auto;
+    }
+
+
+}

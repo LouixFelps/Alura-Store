@@ -1,0 +1,19 @@
+.menu{
+    width: 400px;
+}
+.menu__lista{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.menu__link{
+    color: #333;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    font-size: 18px;
+}
+.menu__link:hover, .menu__link.ativo{
+    border-bottom:4px solid #0073e6 ;
+}
+
